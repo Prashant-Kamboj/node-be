@@ -1,0 +1,5 @@
+- First creat server from http.createServer how it is done by express framework(package) under the hood
+
+- use express to create server
+
+- install prisma typescript ts-node @types/node and create tsconfig.json
