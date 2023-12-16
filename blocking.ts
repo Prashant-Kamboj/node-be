@@ -1,6 +1,8 @@
 // const fs = require("fs");
-const fs = require("fs/promises");
-const path = require("path");
+import fs from "fs/promises";
+import path from "path";
+// const fs = require("fs/promises");
+// const path = require("path");
 // const result = fs.readFileSync(path.join(__dirname, "package.json"), "utf-8");
 const read = async () => {
   const result = fs.readFile(path.join(__dirname, "package.json"), "utf-8");
