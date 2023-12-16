@@ -9,5 +9,4 @@ const read = async () => {
 
 // example of non blocker code use async this will not block the code as it will return promise that will be resolved later
 read().then((response) => console.log(response));
-// console.log(result);
 console.log("hi");
