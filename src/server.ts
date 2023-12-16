@@ -31,11 +31,9 @@ app.use(customLogger("custom logger"));
 // next in handler is used only in case to pass an error
 app.get("/", (req, res, next) => {
   setTimeout(() => {
-    next(new Error("hello"));
+    // next(new Error("hello"));
+    res.json({ message: "Hello world!" });
   }, 100);
-  // throw new Error("error");
-  // res.status(200);
-  // res.json({ message: "Hello world!" });
 });
 
 app.use("/api", protect, router);
